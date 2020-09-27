@@ -108,7 +108,7 @@ body {
   background-image: url("../img/watches.jpg");
   background-repeat: no-repeat;
   background-position: calc(60% + 550px) 20px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .intro-container {
@@ -128,7 +128,10 @@ body {
 }
 
 .intro-heading {
+  margin-top: 0;
   margin-bottom: 70px;
+  line-height: 1.2;
+  text-transform: capitalize;
 }
 
 .intro-text {
@@ -139,10 +142,114 @@ body {
 }
 
 .button-link {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  background-color: rgb(245, 78, 78);
+  background-color: #f54e4e;
   padding: 12px;
+}
+
+.button-link:hover {
+  background-color: #f32e2e;
+}
+
+.button-link:active {
+  background-color: #c10b0b;
+}
+
+
+/* SITE MAIN */
+
+.main__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.main__item {
+  display: flex;
+  flex-direction: column  ;
+  max-width: 250px;
+}
+
+.main__item__header {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.main__item__text {
+  font-size: 15px;
+  color: #444;
+}
+
+.main__rectangle {
+  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: #666;
+  margin-left: 0;
+  box-shadow: 16px 0 #666, 32px 0 #666;
+}
+
+.main__list__link {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(245, 78, 78);
+}
+
+.main__list__link::before {
+  margin-right: 5px;
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: rgb(245, 78, 78);
+  content: "";
+  transition: width 0.3s ease;
+}
+
+.main__list__link:hover::before{
+  width: 45px;
+}
+.main__list__link:active {
+  opacity: 0.5;
+}
+
+/* purchase */
+
+.section {
+  margin-bottom: 30px;
+}
+
+.purchase__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.purchase__section::after {
+  width: 400px;
+  height: 600px;
+  content: "";
+  flex-shrink: 0;
+  display: inline-block;
+  background-image: url("../img/preview.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  /* background-color: #000; */
+}
+
+.purchase-inner {
+  max-width: 390px;
 }
