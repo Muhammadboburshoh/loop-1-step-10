@@ -247,9 +247,16 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
-  /* background-color: #000; */
 }
 
 .purchase-inner {
   max-width: 390px;
+}
+/* site footer  */
+
+.site__footer {
+  background-image: url("../img/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
 }
